@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import styled from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCoffee,
@@ -8,15 +8,22 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+const StyledContactContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(205, 180, 140);
+`;
+
 const Contact = () => {
   return (
-    <div id="Contact">
-      <FontAwesomeIcon icon={faCoffee} />
-      <FontAwesomeIcon icon={faEnvelope} />
-      <FontAwesomeIcon icon={faPenSquare} />
-      <FontAwesomeIcon icon={faLinkedin} />
-      <FontAwesomeIcon icon={faGithub} />
-      <div
+    <StyledContactContainer>
+      <FontAwesomeIcon icon={faCoffee} size={'2x'} />
+      <FontAwesomeIcon icon={faEnvelope} size={'2x'} />
+      <FontAwesomeIcon icon={faPenSquare} size={'2x'} />
+      <FontAwesomeIcon icon={faLinkedin} size={'2x'} />
+      <FontAwesomeIcon icon={faGithub} size={'2x'} />
+      {/* <div
         class="container-fluid contact text-center contact__background-color py-3"
         id="contact"
       >
@@ -50,8 +57,8 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </div> */}
+    </StyledContactContainer>
   );
 };
 

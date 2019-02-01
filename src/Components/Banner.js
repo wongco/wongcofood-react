@@ -14,11 +14,10 @@ const StyledBanner = styled.div`
 `;
 
 const BannerQuoteContainer = styled.div`
-  height: 300px;
   font-size: 150%;
+  font-weight: 800;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: white;
   padding: 30px 50px;
   border-radius: 10px;
   min-width: 200px;
@@ -29,13 +28,7 @@ class Banner extends Component {
   render() {
     return (
       <StyledBanner>
-        <BannerQuoteContainer>
-          Behind every problem is an elegant solution waiting to be created.
-          <hr />
-        </BannerQuoteContainer>
-        <BannerQuoteContainer>
-          Behind every problem is an elegant solution waiting to be created.
-        </BannerQuoteContainer>
+        <BannerQuoteContainer>WongCo</BannerQuoteContainer>
       </StyledBanner>
     );
   }

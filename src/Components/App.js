@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import WongCoNav from './Components/WongCoNav';
-import Banner from './Components/Banner';
-import About from './Components/About';
-import Portfolio from './Components/Portfolio';
-import Contact from './Components/Contact';
+import WongCoNav from './WongCoNav';
+import Banner from './Banner';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
