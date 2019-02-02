@@ -13,10 +13,11 @@ const StyledPortfolioContainer = styled.div`
 const Portfolio = () => {
   return (
     <StyledPortfolioContainer>
-      <div>Portfolio Item</div>
-      <div>Portfolio Item</div>
-      <div>Portfolio Item</div>
-      <div>Portfolio Item</div>
+      <div>Memory Game</div>
+      <div>Meme Generator</div>
+      <div>Hack or Snooze</div>
+      <div>Blogly</div>
+      <div>Warbler</div>
     </StyledPortfolioContainer>
   );
 };

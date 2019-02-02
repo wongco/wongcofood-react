@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <StyledContactContainer>
       <StyledFontAwesomeIcon icon={faCoffee} size={'2x'} />
-      <a href="mailto:gin@wongcofood.com">
+      <a href="mailto:gin+hello@wongcofood.com">
         <StyledFontAwesomeIcon icon={faEnvelope} size={'2x'} />
       </a>
       <a href="https://wongco.github.io/wongcoblog/">

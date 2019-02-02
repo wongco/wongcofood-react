@@ -15,20 +15,25 @@ const StyledBanner = styled.div`
 
 const BannerQuoteContainer = styled.div`
   font-size: 150%;
-  font-weight: 800;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 400;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.65);
   padding: 30px 50px;
   border-radius: 10px;
   min-width: 200px;
-  max-width: 400px;
+  max-width: 800px;
 `;
 
 class Banner extends Component {
   render() {
     return (
       <StyledBanner>
-        <BannerQuoteContainer>WongCo</BannerQuoteContainer>
+        <BannerQuoteContainer>
+          Having crafted solutions as a Systems Admin/Engineer, I firmly believe
+          in the ability of technology to bring people together and address both
+          societal and business challenges. I now take that same passion for
+          solving problems to full stack web development.
+        </BannerQuoteContainer>
       </StyledBanner>
     );
   }
