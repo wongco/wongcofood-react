@@ -1,66 +1,62 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
-// import {
-//   Collapse,
-//   Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   NavLink
-// } from 'reactstrap';
+const StyledNav = styled.nav`
+  display: flex;
+  flex-flow: row none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  box-shadow: 2em 2em 18em white;
+`;
 
+const StyledHome = styled.p`
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: 1em;
+`;
+
+const StyledOl = styled.ol`
+  display: flex;
+  flex-flow: row none;
+  margin-right: 1em;
+`;
+
+const StyledLi = styled.li`
+  list-style: none;
+  margin-right: 1em;
+  font-weight: bold;
+`;
+
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: black;
+  padding: 0.75em;
+  border-radius: 10%;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+`;
 class WongCoNav extends Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-
   render() {
     return (
-      <nav>
-        <div>WongCo</div>
-        <section>
-          <ol>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ol>
-        </section>
-      </nav>
-      //   <Nav color="light" light expand="md">
-      //     <NavbarBrand href="/">WongCo</NavbarBrand>
-      //     <NavbarToggler onClick={this.toggle} />
-      //     <Collapse isOpen={this.state.isOpen} navbar>
-      //       <Nav className="ml-auto" navbar>
-      //         <NavItem>
-      //           <NavLink href="#About">About</NavLink>
-      //         </NavItem>
-      //         <NavItem>
-      //           <NavLink href="#Portfolio">Portfolio</NavLink>
-      //         </NavItem>
-      //         <NavItem>
-      //           <NavLink href="#Contact">Contact</NavLink>
-      //         </NavItem>
-      //       </Nav>
-      //     </Collapse>
-      //   </Navbar>
-      // </div>
+      <StyledNav>
+        <StyledHome>
+          <StyledLink href="#home">WongCo</StyledLink>
+        </StyledHome>
+        <StyledOl>
+          <StyledLi>
+            <StyledLink href="#about">About</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink href="#portfolio">Portfolio</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink href="#contact">Contact</StyledLink>
+          </StyledLi>
+        </StyledOl>
+      </StyledNav>
     );
   }
 }

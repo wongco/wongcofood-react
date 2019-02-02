@@ -27,7 +27,7 @@ const BannerQuoteContainer = styled.div`
 class Banner extends Component {
   render() {
     return (
-      <StyledBanner>
+      <StyledBanner id="home">
         <BannerQuoteContainer>
           Having crafted solutions as a Systems Admin/Engineer, I firmly believe
           in the ability of technology to bring people together and address both

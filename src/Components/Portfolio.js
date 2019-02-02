@@ -12,7 +12,7 @@ const StyledPortfolioContainer = styled.div`
 
 const Portfolio = () => {
   return (
-    <StyledPortfolioContainer>
+    <StyledPortfolioContainer id="portfolio">
       <div>Memory Game</div>
       <div>Meme Generator</div>
       <div>Hack or Snooze</div>
