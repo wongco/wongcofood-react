@@ -45,6 +45,7 @@ const StyledHome = styled.p`
   }
 `;
 
+/** Component for Mobile Only Dropdown Button */
 const StyledBar = styled.div`
   display: none;
 
@@ -86,10 +87,6 @@ const StyledHomeLink = styled.a`
   padding: 0.75em;
   border-radius: 10%;
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
   @media (max-width: 576px) {
     flex: 1 1 100%;
     padding: 0.1em;
@@ -108,7 +105,6 @@ const StyledLink = styled.a`
 
   @media (max-width: 576px) {
     padding: 0.1em;
-    background-color: blue;
   }
 `;
 
