@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledPortfolioContainer = styled.div`
@@ -16,8 +16,9 @@ const Portfolio = () => {
       <div>Memory Game</div>
       <div>Meme Generator</div>
       <div>Hack or Snooze</div>
-      <div>Blogly</div>
+      <div>Jobly</div>
       <div>Warbler</div>
+      <div>MicroBlog</div>
     </StyledPortfolioContainer>
   );
 };

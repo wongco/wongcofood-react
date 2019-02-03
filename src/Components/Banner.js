@@ -10,6 +10,10 @@ const StyledBanner = styled.div`
   color: white;
   width: 100%;
   background-image: url(${bannerImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  /* object-fit: contain; */
   height: 607px;
 `;
 

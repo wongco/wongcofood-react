@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-import WongCoNav from './WongCoNav';
+import Navbar from './Navbar';
 import Banner from './Banner';
 import About from './About';
 import Portfolio from './Portfolio';
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <WongCoNav />
+        <Navbar />
         <Banner />
         <About />
         <Portfolio />
