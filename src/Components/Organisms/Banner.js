@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import bannerImage from '../../pics/baybridge_banner.png';
 import styled from 'styled-components';
 
-const StyledBanner = styled.div`
+const StyledBanner = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;

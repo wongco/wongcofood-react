@@ -93,9 +93,15 @@ class Navbar extends PureComponent {
           />
         </StyledBar>
         <NavLinks isCollapsed={this.state.isCollapsed}>
-          <NavLinks.Item href="#about">About</NavLinks.Item>
-          <NavLinks.Item href="#portfolio">Portfolio</NavLinks.Item>
-          <NavLinks.Item href="#contact">Contact</NavLinks.Item>
+          <NavLinks.Item onClick={this.handleClick} href="#about">
+            About
+          </NavLinks.Item>
+          <NavLinks.Item onClick={this.handleClick} href="#portfolio">
+            Portfolio
+          </NavLinks.Item>
+          <NavLinks.Item onClick={this.handleClick} href="#contact">
+            Contact
+          </NavLinks.Item>
         </NavLinks>
       </StyledNav>
     );

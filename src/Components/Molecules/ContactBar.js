@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import FontAwesomeLink from '../Atoms/FontAwesomeLink';
 
-const StyledContactContainer = styled.div`
+const StyledContactContainer = styled.footer`
   display: flex;
   flex-direction: row;
   justify-content: center;
