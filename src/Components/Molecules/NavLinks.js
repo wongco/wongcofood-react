@@ -7,6 +7,7 @@ const StyledNavLinks = styled.ol`
   flex-flow: row none;
   margin-right: 1em;
 
+  /* Media Query for Mobile */
   @media (max-width: 576px) {
     flex-flow: column wrap;
     flex: 1 1 100%;
@@ -16,6 +17,7 @@ const StyledNavLinks = styled.ol`
 `;
 
 class NavLinks extends PureComponent {
+  // static prop for individual navbar item links
   static Item = props => <NavLinkItem {...props}>{props.children}</NavLinkItem>;
 
   render() {
