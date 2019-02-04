@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bannerImage from '../pics/baybridge_banner.png';
+import bannerImage from '../../pics/baybridge_banner.png';
 import styled from 'styled-components';
 
 const StyledBanner = styled.div`

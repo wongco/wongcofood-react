@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import NavLinkItem from '../Molecules/NavLinkItem';
 
 const StyledNav = styled.nav`
   display: flex;
@@ -56,7 +57,7 @@ const StyledBar = styled.div`
   }
 `;
 
-const StyledOl = styled.ol`
+const NavLinkSection = styled.ol`
   display: flex;
   flex-flow: row none;
   margin-right: 1em;
@@ -69,18 +70,6 @@ const StyledOl = styled.ol`
   }
 `;
 
-const StyledLi = styled.li`
-  list-style: none;
-  font-weight: bold;
-
-  @media (max-width: 576px) {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0.5em 0;
-    margin-right: 1em;
-  }
-`;
-
 const StyledHomeLink = styled.a`
   text-decoration: none;
   color: black;
@@ -89,21 +78,6 @@ const StyledHomeLink = styled.a`
 
   @media (max-width: 576px) {
     flex: 1 1 100%;
-    padding: 0.1em;
-  }
-`;
-
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: black;
-  padding: 0.75em;
-  border-radius: 10%;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  @media (max-width: 576px) {
     padding: 0.1em;
   }
 `;
@@ -131,17 +105,11 @@ class Navbar extends PureComponent {
             size={'2x'}
           />
         </StyledBar>
-        <StyledOl isCollapsed={this.state.isCollapsed}>
-          <StyledLi>
-            <StyledLink href="#about">About</StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink href="#portfolio">Portfolio</StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink href="#contact">Contact</StyledLink>
-          </StyledLi>
-        </StyledOl>
+        <NavLinkSection isCollapsed={this.state.isCollapsed}>
+          <NavLinkItem href="#about">About</NavLinkItem>
+          <NavLinkItem href="#portfolio">Portfolio</NavLinkItem>
+          <NavLinkItem href="#contact">Contact</NavLinkItem>
+        </NavLinkSection>
       </StyledNav>
     );
   }
