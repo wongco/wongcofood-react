@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faPenSquare } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import FaLink from '../Atoms/FontAwesomeLink';
+import FooterButtonLink from '../Molecules/FooterButtonLink';
 
 const StyledContactContainer = styled.div`
   display: flex;
@@ -15,46 +16,15 @@ const StyledContactContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const StyledButton = styled.button`
-  margin: 0 15px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #343a40;
-  color: white;
-
-  &:hover {
-    background-color: gray;
-  }
-`;
-
-const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  margin: 0 15px;
-  color: #343a40;
-  &:hover {
-    color: gray;
-  }
-`;
-
 const Contact = () => {
   return (
     <StyledContactContainer id="contact">
-      <StyledFontAwesomeIcon icon={faCoffee} size={'2x'} />
-      <a href="mailto:gin+hello@wongcofood.com">
-        <StyledFontAwesomeIcon icon={faEnvelope} size={'2x'} />
-      </a>
-      <a href="https://wongco.github.io/wongcoblog/">
-        <StyledFontAwesomeIcon icon={faPenSquare} size={'2x'} />
-      </a>
-      <a href="https://github.com/wongco">
-        <StyledFontAwesomeIcon icon={faGithub} size={'2x'} />
-      </a>
-      <a href="https://www.linkedin.com/in/ginson">
-        <StyledFontAwesomeIcon icon={faLinkedin} size={'2x'} />
-      </a>
-      <a href="resume.pdf">
-        <StyledButton type="button">Resume</StyledButton>
-      </a>
+      <FaLink icon={faCoffee} />
+      <FaLink icon={faEnvelope} href="mailto:gin+hello@wongcofood.com" />
+      <FaLink icon={faPenSquare} href="https://wongco.github.io/wongcoblog/" />
+      <FaLink icon={faGithub} href="https://github.com/wongco" />
+      <FaLink icon={faLinkedin} href="https://www.linkedin.com/in/ginson" />
+      <FooterButtonLink href="resume.pdf">Resume</FooterButtonLink>
     </StyledContactContainer>
   );
 };

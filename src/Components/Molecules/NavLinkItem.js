@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import Link from '../Atoms/Link';
+import StyledLink from '../Atoms/StyledLink';
 
 const StyledLi = styled.li`
   list-style: none;
@@ -18,7 +18,7 @@ class NavLinkItem extends PureComponent {
   render() {
     return (
       <StyledLi>
-        <Link {...this.props}>{this.props.children}</Link>
+        <StyledLink {...this.props}>{this.props.children}</StyledLink>
       </StyledLi>
     );
   }
