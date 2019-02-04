@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import NavLinkItem from '../Molecules/NavLinkItem';
+import NavLinks from '../Molecules/NavLinks';
 
 const StyledNav = styled.nav`
   display: flex;
@@ -57,19 +57,6 @@ const StyledBar = styled.div`
   }
 `;
 
-const NavLinkSection = styled.ol`
-  display: flex;
-  flex-flow: row none;
-  margin-right: 1em;
-
-  @media (max-width: 576px) {
-    flex-flow: column wrap;
-    flex: 1 1 100%;
-    display: ${props => (props.isCollapsed ? 'none' : 'block')};
-    margin: 0;
-  }
-`;
-
 const StyledHomeLink = styled.a`
   text-decoration: none;
   color: black;
@@ -105,11 +92,11 @@ class Navbar extends PureComponent {
             size={'2x'}
           />
         </StyledBar>
-        <NavLinkSection isCollapsed={this.state.isCollapsed}>
-          <NavLinkItem href="#about">About</NavLinkItem>
-          <NavLinkItem href="#portfolio">Portfolio</NavLinkItem>
-          <NavLinkItem href="#contact">Contact</NavLinkItem>
-        </NavLinkSection>
+        <NavLinks isCollapsed={this.state.isCollapsed}>
+          <NavLinks.Item href="#about">About</NavLinks.Item>
+          <NavLinks.Item href="#portfolio">Portfolio</NavLinks.Item>
+          <NavLinks.Item href="#contact">Contact</NavLinks.Item>
+        </NavLinks>
       </StyledNav>
     );
   }
