@@ -12,6 +12,15 @@ const StyledPortfolioItem = styled.div`
   overflow: hidden;
 `;
 
+const StyledDetailsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+  background-color: white;
+  border-top: 2px solid lightgray;
+  /* border-bottom: 2px solid lightgray; */
+`;
+
 const StyledDetailsTab = styled.div`
   display: flex;
   justify-content: center;
@@ -36,11 +45,26 @@ const StyledLastDetailTab = styled(StyledDetailsTab)`
 const PortfolioItem = props => {
   return (
     <StyledPortfolioItem>
-      <StyledDetailsTab>Link</StyledDetailsTab>
-      <StyledDetailsTab>Github</StyledDetailsTab>
-      <StyledLastDetailTab>About</StyledLastDetailTab>
+      <div>Image</div>
+      <StyledDetailsContainer>
+        <StyledDetailsTab>Link</StyledDetailsTab>
+        <StyledDetailsTab>Github</StyledDetailsTab>
+        <StyledLastDetailTab>About</StyledLastDetailTab>
+      </StyledDetailsContainer>
     </StyledPortfolioItem>
   );
 };
+
+{
+  /* <PortfolioItem>
+<div>Meme Generator</div>	        <div>Img Stuff</div>
+  <StyledDetailsContainer>
+    <StyledDetailsTab>Link</StyledDetailsTab>
+    <StyledDetailsTab>Github</StyledDetailsTab>
+    <StyledLastDetailTab>About</StyledLastDetailTab>
+  </StyledDetailsContainer>
+</PortfolioItem>
+<PortfolioItem>Meme Generator</PortfolioItem> */
+}
 
 export default PortfolioItem;
