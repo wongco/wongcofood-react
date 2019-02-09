@@ -45,7 +45,7 @@ const StyledLastDetailTab = styled(StyledDetailsTab)`
 const PortfolioItem = props => {
   return (
     <StyledPortfolioItem>
-      <div>Image</div>
+      <div>{props.name}</div>
       <StyledDetailsContainer>
         <StyledDetailsTab>Link</StyledDetailsTab>
         <StyledDetailsTab>Github</StyledDetailsTab>

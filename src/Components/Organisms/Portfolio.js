@@ -44,19 +44,18 @@ const StyledLastDetailTab = styled(StyledDetailsTab)`
 const Portfolio = () => {
   return (
     <StyledPortfolioContainer id="portfolio">
-      <PortfolioItem>
-        <div>Img Stuff</div>
+      <PortfolioItem name="Test Item">
         <StyledDetailsContainer>
           <StyledDetailsTab>Link</StyledDetailsTab>
           <StyledDetailsTab>Github</StyledDetailsTab>
           <StyledLastDetailTab>About</StyledLastDetailTab>
         </StyledDetailsContainer>
       </PortfolioItem>
-      <PortfolioItem>Meme Generator</PortfolioItem>
-      <div>Hack or Snooze</div>
-      <div>Jobly</div>
-      <div>Warbler</div>
-      <div>MicroBlog</div>
+      {/* <PortfolioItem>Meme Generator</PortfolioItem>
+      <PortfolioItem>Hack or Snooze</PortfolioItem>
+      <PortfolioItem>Jobly</PortfolioItem>
+      <PortfolioItem>Warbler</PortfolioItem>
+      <PortfolioItem>MicroBlog</PortfolioItem> */}
     </StyledPortfolioContainer>
   );
 };
